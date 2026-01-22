@@ -1,0 +1,89 @@
+/* ===== BASE ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* ===== THEMES ===== */
+body.dark {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+body.light {
+  background-color: #f8fafc;
+  color: #020617;
+}
+
+/* ===== LAYOUT ===== */
+header {
+  padding: 40px;
+  text-align: center;
+  background-color: #020617;
+}
+
+main {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #020617;
+  font-size: 14px;
+}
+
+/* ===== TEXT ===== */
+h1, h2 {
+  color: #38bdf8;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #38bdf8;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+/* ===== MOBILE ADAPTATION ===== */
+@media (max-width: 768px) {
+
+  header {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  section {
+    margin-bottom: 30px;
+  }
+}
