@@ -1,43 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mistya | Backend Developer</title>
-
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swatedgirl | Cybersecurity Professional</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="dark">
+<body>
+    <div class="bg-grid"></div>
+    <div class="particles" id="particles"></div>
 
-  <header>
-    <h1>Hello, I am a Backend Developer</h1>
-    <button id="themeToggle">Light mode</button>
-  </header>
+    <header>
+        <nav>
+            <div class="logo">swatedgirl</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section>
-      <h2>About me</h2>
-      <p>
-        My name is Mistya. I am learning Python, C++, C#, and JavaScript
-        to create interesting projects.
-      </p>
-    </section>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>swatedgirl</h1>
+                <h2>Cybersecurity Professional | Ethical Hacker | Digital Guardian</h2>
+            </div>
+            <div class="hero-visual">
+                <div class="shield">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M100 10 L170 40 L170 100 C170 140 140 170 100 190 C60 170 30 140 30 100 L30 40 Z" 
+                              fill="none" 
+                              stroke="url(#gradient)" 
+                              stroke-width="3"/>
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#00f3ff;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#ff00ff;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="100" cy="95" r="25" fill="none" stroke="#00f3ff" stroke-width="2"/>
+                        <rect x="95" y="100" width="10" height="20" fill="#00f3ff"/>
+                    </svg>
+                    <div class="binary">
+                        01001000 01100001<br>
+                        01100011 01101011<br>
+                        01110100 01101000<br>
+                        01100101 01110000<br>
+                        01101100 01100001
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section>
-      <h2>My stack</h2>
+        <section id="about" class="about">
+            <div class="avatar">
+                <div class="avatar-img">
+                    <div class="data-stream"></div>
+                </div>
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I'm a passionate cybersecurity professional specializing in ethical hacking, penetration testing, and digital defense strategies. With years of experience protecting organizations from evolving cyber threats, I combine technical expertise with creative problem-solving to build robust security infrastructures. My mission is to make the digital world safer, one system at a time.</p>
+            </div>
+        </section>
 
-      <button id="toggleStack">Show stack</button>
+        <section id="services" class="services">
+            <h2>Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>Penetration Testing</h3>
+                    <p>Comprehensive security assessments to identify vulnerabilities before attackers do. Simulate real-world attacks to strengthen your defenses.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔒</div>
+                    <h3>Network Security</h3>
+                    <p>Design and implement robust network security architectures. Monitor, detect, and prevent unauthorized access to your critical systems.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📡</div>
+                    <h3>Incident Response</h3>
+                    <p>Rapid response to security incidents. Contain threats, analyze breaches, and implement recovery strategies to minimize damage.</p>
+                </div>
+            </div>
+        </section>
 
-      <div id="stack">
-        <p>HTML / CSS / JavaScript</p>
-      </div>
-    </section>
-  </main>
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="terminal-btn"></div>
+                <div class="terminal-btn"></div>
+                <div class="terminal-btn"></div>
+            </div>
+            <div class="terminal-body">
+                <div class="terminal-line">$ security_status --check</div>
+                <div class="terminal-line">> Running security diagnostics...</div>
+                <div class="terminal-line">> All systems secure ✓</div>
+                <div class="terminal-line">> Firewall active ✓</div>
+                <div class="terminal-line">> Intrusion detection enabled ✓</div>
+                <div class="terminal-line">$ <span class="cursor"></span></div>
+            </div>
+        </div>
+    </main>
 
-  <footer>
-    <p>© 2026 Mistya</p>
-  </footer>
+    <footer>
+        <div class="social-icons">
+            <a href="#" aria-label="GitHub">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                    <circle cx="4" cy="4" r="2"/>
+                </svg>
+            </a>
+        </div>
+        <div class="copyright">
+            © 2026 swatedgirl. All rights reserved. | Securing the digital frontier.
+        </div>
+    </footer>
 
-  <script src="script.js"></script>
+    <link rel="stylesheet" href="script.js">
 </body>
 </html>
